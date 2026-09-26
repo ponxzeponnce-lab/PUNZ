@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tomato - Personal Website</title>
+
+    <style>
+        /* Basic setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Background video */
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        /* Dark overlay so text is easier to see */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: -1;
+        }
+
+        /* Main content */
+        .container {
+            min-height: 100vh;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        .name {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Hobby gallery */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        .hobby {
+            width: 220px;
+            height: 180px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+
+            transition: 0.3s;
+        }
+
+        .hobby:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Video -->
+<video autoplay muted loop id="background-video">
+        <source src="C:\Users\Laizkie - Sidequest\Downloads\DARONISGAY.mp4" type="video/mp4">
+    </video>
+
+    <!-- Dark overlay -->
+    <div class="overlay"></div>
+
+    <!-- Website Content -->
+    <main class="container">
+
+        <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
+
+        <h2 class="name">My name is Tomato 🍅</h2>
+
+        <p class="bio">
+            I create artworks for fun, especially in digital arts,
+            and hopefully find a profession in the future that fits me.
+            You may know me as Punz, Punz_kato, Ponnce, and Ponnze
+            on other socials.
+        </p>
+
+        <!-- Hobby Gallery -->
+        <!-- Hobby Gallery -->
+<section class="gallery">
+
+    <a href="digital-art.html" class="hobby">
+        🎨 Digital Art
+    </a>
+
+    <a href="gaming.html" class="hobby">
+        🎮 Gaming
+    </a>
+
+    <a href="football.html" class="hobby">
+        ⚽ Football
+    </a>
+
+</section>
+    </main>
+
+</body>
+</html>
